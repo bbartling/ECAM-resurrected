@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ecam-mv"
+version = "0.1.0a2"
+description = "Hourly and billing-period energy measurement and verification inspired by ECAM v6"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+keywords = ["energy", "measurement", "verification", "change-point", "ECAM"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = ["numpy>=1.26", "pandas>=2.2,<4", "scipy>=1.12"]
+
+[project.urls]
+Repository = "https://github.com/bbartling/ECAM-resurrected"
+Issues = "https://github.com/bbartling/ECAM-resurrected/issues"
+Documentation = "https://github.com/bbartling/ECAM-resurrected/blob/develop/README.md"
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.8"]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.9", "build>=1.2", "twine>=6", "matplotlib>=3.8"]
+
+[project.scripts]
+ecam-mv = "ecam_mv.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ecam_mv"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/ecam_mv", "tests", "examples", "docs", "README.md", "pyproject.toml", "LICENSE", "NOTICE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
+[tool.coverage.run]
+source = ["ecam_mv"]
+
+[tool.coverage.report]
+show_missing = true

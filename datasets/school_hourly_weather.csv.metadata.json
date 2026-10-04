@@ -1,0 +1,80 @@
+{
+  "frequency": "hourly",
+  "duration_unit": "hour",
+  "energy_unit": "kWh",
+  "temperature_unit": "C",
+  "timezone": "America/Chicago",
+  "timestamp_position": "start",
+  "input_kind": "power",
+  "interval_minutes": 15,
+  "weather_source": "Open-Meteo Archive API",
+  "attribution": "Open-Meteo; Copernicus ERA5",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+  "model": "era5",
+  "latitude": 42.59168,
+  "longitude": -88.43343,
+  "returned_latitude": 42.5,
+  "returned_longitude": -88.5,
+  "api_url": "https://archive-api.open-meteo.com/v1/archive",
+  "returned_locations": [
+    {
+      "latitude": 42.5,
+      "longitude": -88.5,
+      "elevation": 270.0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "utc_offset_seconds": 0
+    },
+    {
+      "latitude": 42.5,
+      "longitude": -88.5,
+      "elevation": 270.0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "utc_offset_seconds": 0
+    },
+    {
+      "latitude": 42.5,
+      "longitude": -88.5,
+      "elevation": 270.0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "utc_offset_seconds": 0
+    },
+    {
+      "latitude": 42.5,
+      "longitude": -88.5,
+      "elevation": 270.0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "utc_offset_seconds": 0
+    },
+    {
+      "latitude": 42.5,
+      "longitude": -88.5,
+      "elevation": 270.0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "utc_offset_seconds": 0
+    }
+  ],
+  "weather_timezone": "UTC",
+  "timeformat": "unixtime",
+  "weather_units": {
+    "temperature_2m": "\u00b0C",
+    "relative_humidity_2m": "%",
+    "dew_point_2m": "\u00b0C",
+    "precipitation": "mm",
+    "surface_pressure": "hPa",
+    "wind_speed_10m": "km/h",
+    "wind_direction_10m": "\u00b0",
+    "cloud_cover": "%",
+    "shortwave_radiation": "W/m\u00b2"
+  },
+  "hourly_value_semantics": "temperature_2m is an instantaneous hourly value; precipitation is the preceding-hour sum in mm; shortwave_radiation is the preceding-hour mean in W/m\u00b2. Joining repeats each source-hour value on matching meter intervals.",
+  "predictor": "temperature",
+  "predictor_unit": "C",
+  "weather_join": "UTC floor-hour of meter interval start"
+}

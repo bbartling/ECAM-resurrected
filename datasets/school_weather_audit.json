@@ -1,0 +1,239 @@
+{
+  "site": {
+    "id": 5259169,
+    "name": "Lake Geneva",
+    "latitude": 42.59168,
+    "longitude": -88.43343,
+    "elevation": 268.0,
+    "feature_code": "PPL",
+    "country_code": "US",
+    "admin1_id": 5279468,
+    "admin2_id": 5277773,
+    "admin3_id": 5259179,
+    "timezone": "America/Chicago",
+    "population": 7778,
+    "postcodes": [
+      "53147"
+    ],
+    "country_id": 6252001,
+    "country": "United States",
+    "admin1": "Wisconsin",
+    "admin2": "Walworth",
+    "admin3": "City of Lake Geneva"
+  },
+  "meter": {
+    "file_count": 4,
+    "row_count": 139825,
+    "files": [
+      "School_2013_2014_KW.csv",
+      "School_2014_2015 KW.csv",
+      "School_2015_2016 KW.csv",
+      "School_2016_2017_KW.csv"
+    ],
+    "source_sha256": {
+      "School_2013_2014_KW.csv": "6d1464412020e6f4bc59b41edcdb4fe8121052bbae2bdced28600873ac0bc311",
+      "School_2014_2015 KW.csv": "8184b6dfc57060c22f972182e7ec30508dfb3f9fbc30f66679d47f7da5758306",
+      "School_2015_2016 KW.csv": "040e39349f62a4f550a28614c026e56b1b69c6fbe7b541b046d54f26f8ea07f8",
+      "School_2016_2017_KW.csv": "64d765800222b63d1f2eed8024d02c6ae3bc37dc2674f3183097f4ddf11f3ddb"
+    },
+    "start": "2013-06-19T00:00:00-05:00",
+    "end": "2017-06-17T12:00:00-05:00",
+    "energy_total": 2753981.5999999996,
+    "timezone": "America/Chicago",
+    "timestamp_position": "end",
+    "interval_minutes": 15,
+    "energy_unit": "kWh",
+    "input_kind": "power",
+    "dst_policy": "infer",
+    "inferred_dst_row_count": 32,
+    "missing_interval_count": 288,
+    "gap_ranges": [
+      {
+        "after": "2014-06-18T04:45:00+00:00",
+        "before": "2014-06-19T05:00:00+00:00",
+        "missing_intervals": 96
+      },
+      {
+        "after": "2015-06-18T04:45:00+00:00",
+        "before": "2015-06-19T05:00:00+00:00",
+        "missing_intervals": 96
+      },
+      {
+        "after": "2016-06-18T04:45:00+00:00",
+        "before": "2016-06-19T05:00:00+00:00",
+        "missing_intervals": 96
+      }
+    ],
+    "partial_hour_count": 1,
+    "required_missing_counts": {
+      "Date": 0,
+      "kW": 0
+    },
+    "reference_missing_counts": {},
+    "timestamp_column": "Date"
+  },
+  "hourly": {
+    "file_count": 4,
+    "row_count": 139825,
+    "files": [
+      "School_2013_2014_KW.csv",
+      "School_2014_2015 KW.csv",
+      "School_2015_2016 KW.csv",
+      "School_2016_2017_KW.csv"
+    ],
+    "source_sha256": {
+      "School_2013_2014_KW.csv": "6d1464412020e6f4bc59b41edcdb4fe8121052bbae2bdced28600873ac0bc311",
+      "School_2014_2015 KW.csv": "8184b6dfc57060c22f972182e7ec30508dfb3f9fbc30f66679d47f7da5758306",
+      "School_2015_2016 KW.csv": "040e39349f62a4f550a28614c026e56b1b69c6fbe7b541b046d54f26f8ea07f8",
+      "School_2016_2017_KW.csv": "64d765800222b63d1f2eed8024d02c6ae3bc37dc2674f3183097f4ddf11f3ddb"
+    },
+    "start": "2013-06-19T00:00:00-05:00",
+    "end": "2017-06-17T12:00:00-05:00",
+    "energy_total": 2753981.5999999996,
+    "timezone": "America/Chicago",
+    "timestamp_position": "end",
+    "interval_minutes": 15,
+    "energy_unit": "kWh",
+    "input_kind": "power",
+    "dst_policy": "infer",
+    "inferred_dst_row_count": 32,
+    "missing_interval_count": 288,
+    "gap_ranges": [
+      {
+        "after": "2014-06-18T04:45:00+00:00",
+        "before": "2014-06-19T05:00:00+00:00",
+        "missing_intervals": 96
+      },
+      {
+        "after": "2015-06-18T04:45:00+00:00",
+        "before": "2015-06-19T05:00:00+00:00",
+        "missing_intervals": 96
+      },
+      {
+        "after": "2016-06-18T04:45:00+00:00",
+        "before": "2016-06-19T05:00:00+00:00",
+        "missing_intervals": 96
+      }
+    ],
+    "partial_hour_count": 1,
+    "required_missing_counts": {
+      "Date": 0,
+      "kW": 0
+    },
+    "reference_missing_counts": {},
+    "timestamp_column": "Date",
+    "hourly_row_count": 35029,
+    "hourly_energy_total": 2753981.6,
+    "missing_hour_count": 72,
+    "partial_coverage_hour_count": 1,
+    "dropped_nonnumeric_reference_columns": []
+  },
+  "interval_weather_join": {
+    "row_count": 139825,
+    "matched_rows": 139825,
+    "unmatched_rows": 0,
+    "bad_drybulb_rows": 0,
+    "reference_missing_counts": {
+      "temperature_2m": 0,
+      "relative_humidity_2m": 0,
+      "dew_point_2m": 0,
+      "precipitation": 0,
+      "surface_pressure": 0,
+      "wind_speed_10m": 0,
+      "wind_direction_10m": 0,
+      "cloud_cover": 0,
+      "shortwave_radiation": 0
+    },
+    "weather_join": "interval-start UTC floor-hour; temperature is the instantaneous hourly value",
+    "precipitation_semantics": "hourly precipitation is the preceding-hour sum and is repeated for joined meter intervals; it is not allocated as an interval total"
+  },
+  "hourly_weather_join": {
+    "row_count": 35029,
+    "matched_rows": 35029,
+    "unmatched_rows": 0,
+    "bad_drybulb_rows": 0,
+    "reference_missing_counts": {
+      "temperature_2m": 0,
+      "relative_humidity_2m": 0,
+      "dew_point_2m": 0,
+      "precipitation": 0,
+      "surface_pressure": 0,
+      "wind_speed_10m": 0,
+      "wind_direction_10m": 0,
+      "cloud_cover": 0,
+      "shortwave_radiation": 0
+    },
+    "weather_join": "interval-start UTC floor-hour; temperature is the instantaneous hourly value",
+    "precipitation_semantics": "hourly precipitation is the preceding-hour sum and is repeated for joined meter intervals; it is not allocated as an interval total"
+  },
+  "weather": {
+    "weather_source": "Open-Meteo Archive API",
+    "attribution": "Open-Meteo; Copernicus ERA5",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+    "model": "era5",
+    "latitude": 42.59168,
+    "longitude": -88.43343,
+    "returned_latitude": 42.5,
+    "returned_longitude": -88.5,
+    "api_url": "https://archive-api.open-meteo.com/v1/archive",
+    "returned_locations": [
+      {
+        "latitude": 42.5,
+        "longitude": -88.5,
+        "elevation": 270.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      {
+        "latitude": 42.5,
+        "longitude": -88.5,
+        "elevation": 270.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      {
+        "latitude": 42.5,
+        "longitude": -88.5,
+        "elevation": 270.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      {
+        "latitude": 42.5,
+        "longitude": -88.5,
+        "elevation": 270.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      {
+        "latitude": 42.5,
+        "longitude": -88.5,
+        "elevation": 270.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      }
+    ],
+    "weather_timezone": "UTC",
+    "timeformat": "unixtime",
+    "weather_units": {
+      "temperature_2m": "\u00b0C",
+      "relative_humidity_2m": "%",
+      "dew_point_2m": "\u00b0C",
+      "precipitation": "mm",
+      "surface_pressure": "hPa",
+      "wind_speed_10m": "km/h",
+      "wind_direction_10m": "\u00b0",
+      "cloud_cover": "%",
+      "shortwave_radiation": "W/m\u00b2"
+    },
+    "hourly_value_semantics": "temperature_2m is an instantaneous hourly value; precipitation is the preceding-hour sum in mm; shortwave_radiation is the preceding-hour mean in W/m\u00b2. Joining repeats each source-hour value on matching meter intervals."
+  },
+  "regression_policy": "Dry bulb by default; gaps retained, not imputed; explicit exclusions required"
+}

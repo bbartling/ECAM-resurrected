@@ -1,0 +1,16 @@
+ecam-mv: independent Python implementation of ECAM-inspired energy M&V workflows.
+
+Legacy reference: ECAM_v6r6_2023-01-06.xlam (January 6, 2023).
+Selected M&V source modules carry:
+Copyright 2018 William E. Koran, P.E.
+Licensed under the Apache License, Version 2.0.
+
+ECAM was conceived and developed by Bill Koran. The legacy About notice credits
+Santiago Martin Rodriguez-Anderson for programming and engineering in version 5,
+Gina Hicks for work in versions 5 and 6, and Jon Peltier for the version 6 UI ribbon.
+
+This package replaces the spreadsheet implementation with newly written Python
+code, explicit data schemas, numerical methods and tests. It is not an official
+ECAM release and does not imply endorsement by the original contributors,
+SBW Consulting, PNNL or ECAM's funders. Legacy workbooks and extracted source
+are not included in the distributions.

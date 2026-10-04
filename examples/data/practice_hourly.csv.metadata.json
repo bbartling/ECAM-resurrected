@@ -1,0 +1,31 @@
+{
+  "frequency": "hourly",
+  "duration_unit": "hour",
+  "energy_unit": "kWh",
+  "temperature_unit": "C",
+  "predictor": "temperature",
+  "predictor_unit": "C",
+  "timezone": "America/Chicago",
+  "timestamp_position": "start",
+  "input_kind": "energy",
+  "interval_minutes": 60,
+  "synthetic": true,
+  "description": "Fictional annual meter/weather practice data; not measured school energy",
+  "generator_seed": 14,
+  "known_model": {
+    "model": "5p",
+    "intercept": 30,
+    "heating_slope": 2,
+    "cooling_slope": 3,
+    "breakpoints_C": [
+      8,
+      20
+    ]
+  },
+  "weather_units": {
+    "temperature_2m": "C",
+    "relative_humidity_2m": "%",
+    "dew_point_2m": "C",
+    "wind_speed_10m": "km/h"
+  }
+}
